@@ -124,7 +124,8 @@ print(' e2 -',e2,'\n','n2 -',n2,'\n','d2 -',d2,'\n','p2 -',p2,'\n','q2 -',q2,'\n
 print(' Початковий ключ -', start_key,'\n','Повідомлення -',msg, '\n')
 
 
-
+if received_key[0]:
+    print('Ключ отримали', received_key,'\n')
 if not received_key[0]:
     print('Помилка')
 print(' Зашифроване повідомлення -',encoded_msg,'\n','Розшифроване повідомлення',decoded_msg, '\n')
